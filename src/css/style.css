@@ -5,10 +5,191 @@
 }
 img {
 	width: 100%;
+	height: 700px;
+	object-fit: cover;
 }
 .container {
 	max-width: 1400px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 16px;
+	padding: 10px 16px;
+}
+
+.P1Text_overPic {
+	margin-top: 40%;
+}
+
+.P1Text_overPic img {
+	width: 20px;
+	height: 20px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.firstPage {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.FirstBigPic {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.P1Oben {
+	position: absolute;
+	top: 7%;
+	left: 55%;
+	z-index: 2;
+}
+
+.hi {
+	font-size: 50px;
+	color: #f1eceb;
+	line-height: 78px;
+}
+
+.name {
+	font-size: 71px;
+	color: #f1eceb;
+	line-height: 78px;
+}
+
+.iAm {
+	font-size: 24px;
+	color: #f1eceb;
+	line-height: 64px;
+}
+
+.satisfiedcont {
+	position: absolute;
+	bottom: 190px;
+	right: 380px;
+	z-index: 8;
+}
+
+.satisfiecDisplay {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 7px;
+	padding-bottom: 8px;
+
+	/* margin-left: 250px; */
+}
+
+.hundert {
+	font-size: 24px;
+	line-height: 32px;
+	/* margin-left: 200px; */
+	color: #e93656;
+}
+
+.satisfoedClients {
+	font-size: 24px;
+	line-height: 32px;
+	color: #f1eceb;
+}
+
+.redLine {
+	width: 260px;
+	height: 6px;
+	background-color: #e93656;
+}
+
+.roca {
+	position: absolute;
+	font-size: 45px;
+	color: #f1eceb;
+	z-index: 4;
+	top: 5%;
+	left: 16%;
+}
+
+.o1 {
+	position: absolute;
+	font-size: 120px;
+	color: #f1eceb;
+	z-index: 5;
+	top: 1%;
+	right: 16%;
+}
+
+.aboutMe {
+	position: absolute;
+	z-index: 6;
+	font-size: 43px;
+	color: #f1eceb;
+	top: 6%;
+	right: 16%;
+}
+
+/* First Page Secnd Section */
+
+.P1SecondSection {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 20px;
+}
+
+.P1SecondSection img {
+	width: 400px;
+	height: 600px;
+}
+
+.P1Middleleft {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 10px;
+	margin-right: 50px;
+}
+
+.P1MiddleRight {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.designDisplay,
+.photographDisplay,
+.marketingDisplay,
+.photoshopDisplay {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	font-size: 20px;
+	line-height: 70px;
+}
+
+.redLineProzent {
+	width: 90px;
+	height: 5px;
+	background-color: #e93656;
+	margin-bottom: 35px;
+}
+
+.prozent {
+	color: #e93656;
+}
+
+.P1MiddleVierPunkte {
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+	gap: 30px;
+}
+
+.punkte {
+	width: 10px;
+	height: 20px;
+	border: 2px solid #6b6b6b;
+	border-radius: 0%;
+	outline: 20px solid #f9f9f9;
+	margin: 10px;
+}
+
+.punkte:hover {
+	outline: 20px solid #15263e;
 }
