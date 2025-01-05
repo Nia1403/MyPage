@@ -2,25 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>My Page</title>
-		<script
-			defer
-			src="main.js"></script>
-		<link
-			rel="stylesheet"
-			href="src/css/style.css" />
+		<script defer src="main.js"></script>
+		<link rel="stylesheet" href="src/css/style.css" />
 	</head>
 	<body>
 		<div class="container">
 			<div class="firstPage">
 				<section class="P1firstsection">
 					<div class="FirstBigPic">
-						<img
-							src="src/images/firstPage/bigPic.jpg"
-							alt="big pic" />
+						<img src="src/images/firstPage/bigPic.jpg" alt="big pic" />
 					</div>
 
 					<div class="roca">
@@ -38,21 +30,11 @@
 							<p class="hi">Hi, I'Am</p>
 							<p class="name">Nia</p>
 							<p class="iAm">I am Wed Designer @ example</p>
-							<img
-								src="src/images/firstPage/facebook.svg"
-								alt="facebook Pic" />
-							<img
-								src="src/images/firstPage/twitter.svg"
-								alt="twitter pic" />
-							<img
-								src="src/images/firstPage/google.svg"
-								alt="google pic" />
-							<img
-								src="src/images/firstPage/youtube.svg"
-								alt="youtube pic" />
-							<img
-								src="src/images/firstPage/rss.svg"
-								alt="wifi pic" />
+							<img src="src/images/firstPage/facebook.svg" alt="facebook Pic" />
+							<img src="src/images/firstPage/twitter.svg" alt="twitter pic" />
+							<img src="src/images/firstPage/google.svg" alt="google pic" />
+							<img src="src/images/firstPage/youtube.svg" alt="youtube pic" />
+							<img src="src/images/firstPage/rss.svg" alt="wifi pic" />
 						</div>
 					</div>
 					<div class="satisfiedcont">
@@ -69,54 +51,110 @@
 						<h3 class="secondSectionName">Nia Buts</h3>
 						<h5 class="webDesigner">WEB DESIGNER</h5>
 						<h6 class="secondSectiontext">
-							hier ist sachen über mich bla bla bla links
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Praesentium quasi ad provident vitae dignissimos atque est
+							expedita. Aut incidunt laboriosam adipisci exercitationem,
+							nesciunt labore nisi illo. Modi saepe exercitationem ut?
 						</h6>
-						<button class="buttHireMe">Hire Me</button>
+						<button
+							class="buttHireMe"
+							onclick="window.location.href='mailto:example@example.con';"
+						>
+							Hire Me
+						</button>
 					</div>
-					<div class="P1Middlemiddle">
+					<div class="P1MiddlePics">
 						<img
-							src="src/images/firstPage/pic.jpg"
-							alt="here me" />
+							src="src/images/firstPage/P1.jpg"
+							alt="Pic 1"
+							class="pic"
+							id="pic"
+						/>
+						<img
+							src="src/images/firstPage/P2.jpg"
+							alt="Pic 2"
+							class="pic"
+							id="pic"
+						/>
+						<img
+							src="src/images/firstPage/P3.jpg"
+							alt="Pic 3"
+							class="pic"
+							id="pic"
+						/>
+						<img
+							src="src/images/firstPage/P4.jpg"
+							alt="Pic 4"
+							class="pic"
+							id="pic"
+						/>
 					</div>
 
 					<div class="P1MiddleRight">
 						<div class="design">
 							<div class="designDisplay">
 								<p class="TexteImProzente">Design</p>
-								<span class="prozent">0%</span>
+								<span class="prozent" id="prozent">0%</span>
 							</div>
-							<div class="redLineProzent"></div>
+							<div class="redLineProzent" id="redLineProzent"></div>
 						</div>
 						<div class="photography">
 							<div class="photographDisplay">
 								<p class="TexteImProzente">photography</p>
-								<span class="prozent">0%</span>
+								<span class="prozent" id="prozent">0%</span>
 							</div>
-							<div class="redLineProzent"></div>
+							<div class="redLineProzent" id="redLineProzent"></div>
 						</div>
 						<div class="Marketing">
 							<div class="marketingDisplay">
 								<p class="TexteImProzente">Marketing</p>
-								<span class="prozent">0%</span>
+								<span class="prozent" id="prozent">0%</span>
 							</div>
-							<div class="redLineProzent"></div>
+							<div class="redLineProzent" id="redLineProzent"></div>
 						</div>
 						<div class="Photoshop">
 							<div class="photoshopDisplay">
 								<p class="TexteImProzente">Photoshop</p>
-								<span class="prozent">0%</span>
+								<span class="prozent" id="prozent">0%</span>
 							</div>
-							<div class="redLineProzent"></div>
+							<div class="redLineProzent" id="redLineProzent"></div>
 						</div>
 
-						<div class="P1MiddleVierPunkte">
-							<button class="Punkt1 punkte"></button>
-							<button class="Punkt2 punkte"></button>
-							<button class="Punkt3 punkte"></button>
-							<button class="Punkt4 punkte"></button>
+						<div class="P1MiddleVierPunkte" id="P1MiddleVierPunkte">
+							<button class="Punkt1 punkte" id="punkte"></button>
+							<button class="Punkt2 punkte" id="punkte"></button>
+							<button class="Punkt3 punkte" id="punkte"></button>
+							<button class="Punkt4 punkte" id="punkte"></button>
 						</div>
 					</div>
 				</section>
+			</div>
+		</div>
+		<!-- bis hier , obere Div ist continer -->
+		<div class="P1Footer">
+			<div class="phoneDiv">
+				<img src="src/images/randome/1.svg" alt="pic hier" />
+				<p>Phone Number</p>
+				<p>
+					+1 256 254 84 56 <br />
+					+123 - 456-7890
+				</p>
+			</div>
+			<div class="userAdressDiv">
+				<img src="src/images/randome/2.svg" alt="pic hier" />
+				<p>user Address</p>
+				<p>
+					24058, Belgium, Brussels, <br />
+					Liutte 27 United State
+				</p>
+			</div>
+			<div class="emailDiv">
+				<img src="src/images/randome/3.svg" alt="pic here" />
+				<p>Email Address</p>
+				<p>
+					johnsmith@company.com <br />
+					youoffice@company.com
+				</p>
 			</div>
 		</div>
 	</body>
