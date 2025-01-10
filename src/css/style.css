@@ -382,16 +382,89 @@ img {
 	color: #ececec;
 }
 
-.p2Footer img {
+.p2Footer {
 	position: relative;
 	overflow: hidden;
-	height: 500px;
+}
+
+.p2Footer img {
+	height: 450px;
 }
 
 .p2LoremTextFooter {
 	position: absolute;
-	transform: translate(180%, -1900%);
-	/* bottom: -2100px;
-	right: 250px;
-	z-index: 19; */
+	top: 42%;
+	left: 25%;
+	font-size: 15px;
+	line-height: 30px;
+	text-align: right;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.p2BigRedCircle {
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	margin: 10px;
+	background-color: #b97679;
+}
+
+.p2BigRedCircle::after {
+	content: "";
+	position: absolute;
+	top: -11px;
+	left: -11px;
+	width: 130px;
+	height: 130px;
+	border: 1px dashed rgb(211, 207, 207);
+	border-radius: 50%;
+}
+
+.p2graphicDesigner {
+	position: absolute;
+	top: 36%;
+	left: 64%;
+}
+
+.apostrophe {
+	font-size: 45px;
+	font-weight: bold;
+	color: #ffffff;
+	opacity: 1;
+}
+
+.p2graphicDesignerTitel {
+	font-size: 13px;
+	color: #e93656;
+	line-height: 40px;
+}
+
+.p2graphicDesignerName {
+	font-size: 28px;
+	color: #ffffff;
+	line-height: 40px;
+}
+
+.punkteP2 {
+	position: absolute;
+	top: 45%;
+	left: 87%;
+}
+
+.vierEkickePunkte {
+	margin: 10px;
+	width: 15px;
+	height: 15px;
+	border-radius: 10%;
+	border: 2px solid white;
+}
+
+.vierEkickePunkte:hover {
+	border: 2px solid #e93656;
 }
