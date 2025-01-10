@@ -344,7 +344,7 @@ img {
 
 .hiddenText {
 	opacity: 0;
-	transition: opacity 0.3s ease;
+	transition: opacity 0.1s ease;
 }
 
 .Box:hover img,
@@ -380,4 +380,18 @@ img {
 	opacity: 98%;
 	text-align: center;
 	color: #ececec;
+}
+
+.p2Footer img {
+	position: relative;
+	overflow: hidden;
+	height: 500px;
+}
+
+.p2LoremTextFooter {
+	position: absolute;
+	transform: translate(180%, -1900%);
+	/* bottom: -2100px;
+	right: 250px;
+	z-index: 19; */
 }
