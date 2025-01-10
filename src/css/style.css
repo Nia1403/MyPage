@@ -468,3 +468,96 @@ img {
 .vierEkickePunkte:hover {
 	border: 2px solid #e93656;
 }
+
+/* ab hier dritte Page */
+
+.p3Titel {
+	margin-top: 140px;
+	text-align: center;
+	font-size: 70px;
+	line-height: 36px;
+	color: #2e2e2e;
+}
+
+.lastProjektGrid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	margin: 80px 0px;
+	gap: 50px;
+}
+
+.leftMenü {
+	background-color: #15263e;
+}
+
+.leftMenü p {
+	padding: 18px 60px;
+	font-size: 20px;
+	line-height: 23px;
+	color: #ffffff;
+}
+
+.leftMenü p:hover {
+	color: #e93656;
+}
+
+.gridBoxes {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* margin-top: 20px; */
+	gap: 10px;
+}
+
+.grid {
+	width: 300px;
+	height: 300px;
+	background-color: #848484;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+}
+
+.grid:hover {
+	background-color: #000000;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: hidden;
+}
+
+.grid img {
+	height: 20px;
+	width: 20px;
+}
+
+.grid:hover img {
+	margin-top: 60px;
+	border: 2px solid red;
+	border-radius: 50%;
+	padding: 10px;
+	opacity: 98%;
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+}
+
+.grid:hover h6 {
+	margin-top: 20px;
+	width: 100%;
+	opacity: 98%;
+	text-align: center;
+	color: #ececec;
+}
+
+.grid:hover h3 {
+	margin-top: 20px;
+	width: 100%;
+	opacity: 98%;
+	text-align: center;
+	color: #ececec;
+}

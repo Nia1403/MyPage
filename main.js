@@ -1,5 +1,6 @@
 const redLines = document.querySelectorAll("#redLineProzent");
 const prozents = document.querySelectorAll("#prozent");
+const date = document.querySelectorAll("#datum");
 
 window.addEventListener("scroll", function () {
 	const p1Punkt1 = document.querySelector("#punkt1");
@@ -41,4 +42,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Zeige das erste Bild beim Laden der Seite
 	zeigPic(0);
+});
+
+const heute = new Date();
+
+const workingDatum = new Date("2025-01-01");
+
+const diffinMiliSec = heute - workingDatum;
+
+const diffDays = Math.ceil(diffinMiliSec / (1000 * 60 * 60 * 24));
+
+date.forEach((el) => {
+	el.innerText = `${diffDays} days ago`;
 });
