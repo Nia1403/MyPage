@@ -1,6 +1,29 @@
 const redLines = document.querySelectorAll("#redLineProzent");
 const prozents = document.querySelectorAll("#prozent");
 const date = document.querySelectorAll("#datum");
+const bigPics = document.querySelectorAll(".bigPic");
+
+let currentSlide = 0;
+const showPics = () => {
+	bigPics.forEach((slide, index) => {
+		slide.classList.toggle("active", index === currentSlide);
+	});
+};
+
+const goToNextPic = () => {
+	// hier currentslite immer erhöhen und mit '%' wird nie die länder der bgpics überschrotten
+	currentSlide = (currentSlide + 1) % bigPics.length;
+};
+
+const slideFunction = () => {
+	showPics();
+	goToNextPic();
+};
+
+// slidefunktion soll alle 4 sekunden ausgeführt werden
+setInterval(slideFunction, 3000);
+// am Anfang gleich die erste Funktion starten, sonnst muss 4 sec gewartet werden
+slideFunction();
 
 window.addEventListener("scroll", function () {
 	const p1Punkt1 = document.querySelector("#punkt1");
