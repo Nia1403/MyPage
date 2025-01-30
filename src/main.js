@@ -3,6 +3,16 @@ const prozents = document.querySelectorAll("#prozent");
 const date = document.querySelectorAll("#datum");
 const bigPics = document.querySelectorAll(".bigPic");
 
+const allButn = document.querySelector(".all");
+const workIdeasButn = document.querySelector(".work");
+const mockupButn = document.querySelector(".mockUp");
+const designBtn = document.querySelector(".psd");
+const logoButn = document.querySelector(".logoB");
+const presentationButn = document.querySelector(".present");
+const iconsButn = document.querySelector(".icon");
+
+const gridItems = document.querySelectorAll(".grid");
+
 let currentSlide = 0;
 const showPics = () => {
 	bigPics.forEach((slide, index) => {
@@ -78,3 +88,23 @@ const diffDays = Math.ceil(diffinMiliSec / (1000 * 60 * 60 * 24));
 date.forEach((el) => {
 	el.innerText = `${diffDays} days ago`;
 });
+
+// hier die funktion zum verwenden
+function filterGrid(category) {
+	gridItems.forEach((pic) => {
+		if (pic.classList.contains(category)) {
+			pic.style.opacity = "1";
+		} else {
+			pic.style.opacity = "0.1";
+		}
+	});
+}
+
+// hier beliebieg verwenden
+workIdeasButn.addEventListener("click", () => filterGrid("workIdeas"));
+mockupButn.addEventListener("click", () => filterGrid("mockup"));
+designBtn.addEventListener("click", () => filterGrid("design"));
+logoButn.addEventListener("click", () => filterGrid("logo"));
+presentationButn.addEventListener("click", () => filterGrid("presentation"));
+iconsButn.addEventListener("click", () => filterGrid("icons"));
+allButn.addEventListener("click", () => filterGrid("alle"));

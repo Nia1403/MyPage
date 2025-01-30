@@ -76,10 +76,14 @@ img {
 	line-height: 64px;
 }
 
+.P1firstsection {
+	position: relative;
+}
+
 .satisfiedcont {
 	position: absolute;
-	bottom: 250px;
-	right: 250px;
+	bottom: 45px;
+	right: 60px;
 	z-index: 8;
 }
 
@@ -117,8 +121,8 @@ img {
 	font-size: 45px;
 	color: #f1eceb;
 	z-index: 4;
-	top: 5%;
-	left: 16%;
+	top: 8%;
+	left: 6%;
 }
 
 .o1 {
@@ -520,16 +524,22 @@ img {
 
 .leftMenü {
 	background-color: #15263e;
+	width: 300px;
 }
 
-.leftMenü p {
-	padding: 18px 60px;
-	font-size: 20px;
-	line-height: 23px;
+.leftMenü button {
+	width: 70%;
+	padding: 20px 60px;
+	margin-left: 20px;
+	font-size: 15px;
+	text-align: left;
+	line-height: 20px;
+	background-color: #15263e;
 	color: #ffffff;
+	border: none;
 }
 
-.leftMenü p:hover {
+.leftMenü button:hover {
 	color: #e93656;
 }
 
