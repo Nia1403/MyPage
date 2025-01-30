@@ -429,6 +429,10 @@ img {
 	position: absolute;
 	top: 42%;
 	left: 25%;
+	display: flex;
+
+	max-width: 25%;
+	flex-wrap: wrap;
 	font-size: 15px;
 	line-height: 30px;
 	text-align: right;
