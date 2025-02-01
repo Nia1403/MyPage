@@ -37,11 +37,6 @@ slideFunction();
 
 // hier scroll function, mit Procenten
 window.addEventListener("scroll", function () {
-	// const p1Punkt1 = document.querySelector("#punkt1");
-	// const p1Punkt2 = document.querySelector("#punkt2");
-	// const p1Punkt3 = document.querySelector("#punkt3");
-	// const p1Punkt4 = document.querySelector("#punkt4");
-
 	// hier balken und prozente beim scrollen anpassen
 	const scrollUp = window.scrollY; // aktuelle scrollposition
 	const windowHohe = document.documentElement.scrollHeight - window.innerHeight;
@@ -110,19 +105,6 @@ date.forEach((el) => {
 	el.innerText = `${diffDays} days ago`;
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-// 	function zeigInfoSlide(index) {
-// 		slideInhalts.forEach((slide) => slide.classList.remove("active"));
-
-// 		slideInhalts[index].classList.add("active");
-
-// 		slideBtns.forEach((button, index) => {
-// 			button.addEventListener("click", () => zeigInfoSlide(index));
-// 		});
-// 		zeigInfoSlide(0);
-// 	}
-// });
-
 // hier die funktion zum verwenden
 function filterGrid(category) {
 	gridItems.forEach((pic) => {
@@ -142,3 +124,93 @@ logoButn.addEventListener("click", () => filterGrid("logo"));
 presentationButn.addEventListener("click", () => filterGrid("presentation"));
 iconsButn.addEventListener("click", () => filterGrid("icons"));
 allButn.addEventListener("click", () => filterGrid("alle"));
+
+// ab hier
+
+function showModal() {
+	const modal = document.getElementById("modal");
+	modal.style.display = "flex"; // Modal sichtbar machen
+}
+
+// Funktion, um das Modal zu schließen
+function closeModal() {
+	const modal = document.getElementById("modal");
+	modal.style.display = "none"; // Modal ausblenden
+}
+
+document
+	.getElementById("contact-form")
+	.addEventListener("submit", function (e) {
+		e.preventDefault(); // Verhindert das Standard-Submit-Verhalten des Formulars
+
+		// Formulardaten sammeln
+		const formData = new FormData(this);
+
+		// Die Daten, die im POST-Request gesendet werden
+		const data = {
+			titel: formData.get("name"),
+			body: formData.get("message"),
+			userId: 1,
+		};
+
+		console.log(data); // Ausgeben der Formulardaten in der Konsole
+
+		// POST-Anfrage an die API senden
+		fetch("https://jsonplaceholder.typicode.com/posts", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(data), // JSON-Daten senden
+			// body: formData, // Wir senden hier das FormData-Objekt direkt
+		})
+			.then((response) => response.json()) // Antwort der API in JSON umwandeln
+			.then((data) => {
+				console.log("Antwort der API:", data); // Ausgabe der Antwort zur Überprüfung
+				// Prüfen, ob die ID zurückgegeben wird
+				if (data.id) {
+					alert("Message has been sent successfully");
+				} else {
+					alert(
+						"Es gab ein Problem beim Senden. Bitte versuch es noch einmal.",
+					);
+				}
+			})
+			.catch((error) => {
+				console.error("Error:", error);
+				alert("An error occurred while sending your message.");
+			});
+
+		document.getElementById("contact-form").reset();
+		showModal();
+	});
+
+document.getElementById("close-btn").addEventListener("click", closeModal);
+
+// // ab hier modal
+
+// function showModal() {
+// 	const modal = document.getElementById("modal");
+// 	modal.style.display = "flex"; // Modal sichtbar machen
+// }
+
+// // Funktion, um das Modal zu schließen
+// function closeModal() {
+// 	const modal = document.getElementById("modal");
+// 	modal.style.display = "none"; // Modal ausblenden
+// }
+
+// // Formularabsendung
+// document
+// 	.getElementById("contact-form")
+// 	.addEventListener("submit", function (e) {
+// 		e.preventDefault(); // Verhindert das Standard-Submit-Verhalten des Formulars
+
+// 		// Hier würdest du deine API-Logik einfügen (z. B. fetch())
+
+// 		// Wenn die Antwort von der API erfolgreich ist, Modal anzeigen
+// 		showModal();
+// 	});
+
+// // Schließen des Modals, wenn der X-Button geklickt wird
+// document.getElementById("close-btn").addEventListener("click", closeModal);
