@@ -16,6 +16,85 @@ img {
 	padding: 10px 16px;
 }
 
+.hi,
+.iAm {
+	font-family: "GlacialIndifferenceRegular";
+}
+
+.name,
+.secondSectionName,
+.buttHireMe,
+.P1MiddleRight,
+.P1Footer h3,
+.grigBalken p,
+.grigBalken h3,
+.p2graphicDesignerName,
+.p3Titel,
+.leftMenü,
+.gridBoxes h3,
+.p4SmallTitel,
+.p4BigTitel,
+.designerInhalt h2,
+.p4SmallTitel,
+.p4BigTitel,
+.sublit {
+	font-family: "GlacialIndifferenceBold";
+}
+
+.mapTitels h1,
+.designerImages h3 {
+	font-family: "JaapokkiRegular";
+}
+
+.satisfiecDisplay {
+	font-family: "MontserratBold";
+}
+
+/* . {
+	font-family: "MontserratRegular";
+} */
+
+.grigBalken h5 {
+	font-family: "MuliLight";
+}
+
+.secondSectiontext {
+	font-family: "MuliRegular";
+}
+
+.webDesigner,
+.P1Footer h4,
+.gridBoxes h6,
+.designerInhalt h5,
+.designerInhalt h3,
+.lasFooterShorter p {
+	font-family: "Muli";
+}
+
+.roca,
+.aboutMe,
+.o1,
+.lastFooterLonger h1 {
+	font-family: "PoppinsEXTRABold";
+}
+
+.p4BlauBoxenHiddenText h2,
+.formRow input::placeholder,
+.formRow textarea::placeholder {
+	font-family: "PoppinsSEMIBold";
+}
+
+.p2LoremTextFooter,
+.p4BlauBoxenHiddenText h4,
+.mapTitels h4 {
+	font-family: "RobotoLight";
+}
+
+.p2graphicDesignerTitel,
+.lastFooterLonger h4 {
+	font-family: "RobotoRegular";
+}
+
 .P1Text_overPic {
 	margin-top: 40%;
 }
@@ -173,6 +252,12 @@ img {
 	gap: 15px;
 }
 
+.P1MiddleRight p {
+	font-size: 20px;
+	/* font-weight: normal; */
+	color: #555555;
+}
+
 .design,
 .photography,
 .Marketing,
@@ -259,6 +344,7 @@ img {
 	line-height: 26px;
 	color: #555555;
 	text-align: right;
+	/* font-weight: normal; */
 }
 
 .buttHireMe {
@@ -378,7 +464,7 @@ img {
 	font-size: 22px;
 	line-height: 28px;
 	color: #222222;
-	font-weight: normal;
+	/* font-weight: normal; */
 	margin-top: 10px;
 }
 
@@ -422,6 +508,7 @@ img {
 	line-height: 26px;
 	opacity: 98%;
 	text-align: center;
+	font-weight: normal;
 	color: #ececec;
 }
 
@@ -740,6 +827,24 @@ img {
 	/* background-color: #555555; */
 }
 
+.designerInhalt h5 {
+	font-size: 14px;
+	line-height: 16px;
+	color: #888888;
+}
+
+.designerInhalt h2 {
+	font-size: 38px;
+	line-height: 44px;
+	color: #161616;
+}
+
+.designerInhalt h3 {
+	font-size: 16px;
+	line-height: 30px;
+	color: #494949;
+}
+
 .p4Bottom {
 	margin-top: 7%;
 }
@@ -894,6 +999,13 @@ img {
 	padding: 10px;
 	border: 1px solid #ccc;
 	resize: none; /* Verhindert das Vergrößern oder Verkleinern des Textarea-Felds */
+}
+
+.formRow input::placeholder,
+.formRow textarea::placeholder {
+	font-size: 10px;
+	line-height: 50px;
+	color: #515151;
 }
 
 /* Das Textarea-Container-Div soll die gesamte Breite im Grid nutzen */

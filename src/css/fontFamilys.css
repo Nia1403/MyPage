@@ -1,0 +1,73 @@
+@font-face {
+	font-family: "GlacialIndifferenceRegular";
+	src: url("../fonst/GlacialIndifference-Regular.woff2") format("woff2"),
+		url("../fonst/GlacialIndifference-Regular.woff") format("woff");
+
+	/* woff 2 - für super modern browser; woff - für pretty modern browsers*/
+}
+
+@font-face {
+	font-family: "GlacialIndifferenceBold";
+	src: url("../fonst/GlacialIndifference-Bold.woff2") format("woff2"),
+		url("../fonst/GlacialIndifference-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "JaapokkiRegular";
+	src: url("../fonst/Jaapokki-Regular.woff2") format("woff2"),
+		url("../fonst/Jaapokki-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "MontserratBold";
+	src: url("../fonst/Montserrat-Bold.woff2") format("woff2"),
+		url("../fonst/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "MontserratRegular";
+	src: url("../fonst/Montserrat-Regular.woff2") format("woff2"),
+		url("../fonst/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "MuliLight";
+	src: url("../fonst/Muli-Light.woff2") format("woff2"),
+		url("../fonst/Muli-Light.woff") format("woff");
+}
+
+@font-face {
+	font-family: "MuliRegular";
+	src: url("../fonst/Muli-Regular.woff2") format("woff2"),
+		url("../fonst/Muli-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Muli";
+	src: url("../fonst/Muli.woff2") format("woff2"),
+		url("../fonst/Muli.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PoppinsEXTRABold";
+	src: url("../fonst/Poppins-ExtraBold.woff2") format("woff2"),
+		url("../fonst/Poppins-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PoppinsSEMIBold";
+	src: url("../fonst/Poppins-SemiBold.woff2") format("woff2"),
+		url("../fonst/Poppins-SemiBold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonst/Roboto-Light.woff2") format("woff2"),
+		url("../fonst/Roboto-Light.woff") format("woff");
+}
+
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonst/Roboto-Regular.woff2") format("woff2"),
+		url("../fonst/Roboto-Regular.woff") format("woff");
+}
