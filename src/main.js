@@ -105,16 +105,31 @@ date.forEach((el) => {
 	el.innerText = `${diffDays} days ago`;
 });
 
-// hier die funktion zum verwenden
+// hier die funktion zum filtern
 function filterGrid(category) {
-	gridItems.forEach((pic) => {
-		if (pic.classList.contains(category)) {
-			pic.style.opacity = "1";
-		} else {
-			pic.style.opacity = "0.1";
-		}
-	});
+	// für Filter muss eine Array sein, deshalb erstmal umwandeln in Array
+	const itemsInArray = Array.from(gridItems);
+
+	itemsInArray
+		.filter((pic) => pic.classList.contains(category))
+		.forEach((pic) => (pic.style.opacity = "1"));
+
+	itemsInArray
+		.filter((pic) => !pic.classList.contains(category))
+		.forEach((pic) => (pic.style.opacity = "0.1"));
 }
+
+// das ohne Filter, einfach mit foreach
+
+// function filterGrid(category) {
+// 	gridItems.forEach((pic) => {
+// 		if (pic.classList.contains(category)) {
+// 			pic.style.opacity = "1";
+// 		} else {
+// 			pic.style.opacity = "0.1";
+// 		}
+// 	});
+// }
 
 // hier beliebieg verwenden
 workIdeasButn.addEventListener("click", () => filterGrid("workIdeas"));
@@ -125,8 +140,7 @@ presentationButn.addEventListener("click", () => filterGrid("presentation"));
 iconsButn.addEventListener("click", () => filterGrid("icons"));
 allButn.addEventListener("click", () => filterGrid("alle"));
 
-// ab hier
-
+// ab hier Modal
 function showModal() {
 	const modal = document.getElementById("modal");
 	modal.style.display = "flex"; // Modal sichtbar machen
@@ -153,9 +167,9 @@ document
 			userId: 1,
 		};
 
-		console.log(data); // Ausgeben der Formulardaten in der Konsole
+		// console.log(data); // Ausgeben der Formulardaten in der Konsole
 
-		// POST-Anfrage an die API senden
+		// POST-Anfrage an die API senden mit fetch()
 		fetch("https://jsonplaceholder.typicode.com/posts", {
 			method: "POST",
 			headers: {
@@ -185,32 +199,5 @@ document
 		showModal();
 	});
 
+// Schließen des Modals, wenn der X-Button geklickt wird
 document.getElementById("close-btn").addEventListener("click", closeModal);
-
-// // ab hier modal
-
-// function showModal() {
-// 	const modal = document.getElementById("modal");
-// 	modal.style.display = "flex"; // Modal sichtbar machen
-// }
-
-// // Funktion, um das Modal zu schließen
-// function closeModal() {
-// 	const modal = document.getElementById("modal");
-// 	modal.style.display = "none"; // Modal ausblenden
-// }
-
-// // Formularabsendung
-// document
-// 	.getElementById("contact-form")
-// 	.addEventListener("submit", function (e) {
-// 		e.preventDefault(); // Verhindert das Standard-Submit-Verhalten des Formulars
-
-// 		// Hier würdest du deine API-Logik einfügen (z. B. fetch())
-
-// 		// Wenn die Antwort von der API erfolgreich ist, Modal anzeigen
-// 		showModal();
-// 	});
-
-// // Schließen des Modals, wenn der X-Button geklickt wird
-// document.getElementById("close-btn").addEventListener("click", closeModal);

@@ -884,7 +884,7 @@ img {
 	position: relative;
 	flex-wrap: wrap;
 	margin: 10px;
-	transition: all 0.3s ease-in-out;
+	/* transition: all 0.3s ease-in-out; */
 }
 
 .p4BlauBoxen {
@@ -1097,6 +1097,12 @@ img {
 	font-size: 15px;
 	line-height: 24px;
 	color: #a0a8b7;
+}
+
+.lastFooterLongerPics {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
 }
 
 .lastFooterLongerPics img {
