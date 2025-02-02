@@ -5,7 +5,8 @@
 }
 img {
 	width: 100%;
-	height: 700px;
+	/* height: 700px; */
+	height: auto;
 	object-fit: cover;
 }
 
@@ -14,6 +15,8 @@ img {
 	width: 100%;
 	margin: 0 auto;
 	padding: 10px 16px;
+
+	overflow: hidden;
 }
 
 .hi,
@@ -1028,6 +1031,7 @@ img {
 	width: 100%;
 	max-width: 60%;
 	z-index: 1;
+	margin-top: 30px;
 }
 
 .sublit {
@@ -1139,4 +1143,89 @@ img {
 	padding: 10px;
 	background-color: #fff;
 	border: none;
+}
+
+@media (max-width: 768px) {
+	.p3,
+	.P1Footer,
+	.P1Oben,
+	.roca,
+	.aboutMe,
+	.o1,
+	.P1Oben p,
+	.mapTitels h4,
+	.p2LoremTextFooter p,
+	.punkteP2,
+	.satisfiedcont,
+	.p4Bottom {
+		display: none;
+	}
+
+	.container {
+		padding: 5px 10px; /* Weniger Padding */
+	}
+
+	.firstPage {
+		grid-template-rows: auto; /* Vermeidet zu hohe Abschnitte */
+	}
+
+	.hi {
+		font-size: 35px;
+		line-height: 50px;
+	}
+
+	.name {
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	.iAm {
+		font-size: 20px;
+		line-height: 40px;
+	}
+
+	.p4BigTitel {
+		font-size: 45px;
+	}
+
+	.designerInhalt h2 {
+		font-size: 30px;
+	}
+
+	.P1Oben {
+		top: 5%;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+	}
+
+	.p2graphicDesigner {
+		margin-left: 40px;
+	}
+
+	.P1SecondSection {
+		grid-template-columns: 1fr; /* Alles untereinander */
+		gap: 10px;
+		text-align: center;
+	}
+
+	.P1SecondSection img {
+		width: 100%;
+		height: auto; /* Automatische Höhe */
+	}
+
+	.P1Middleleft,
+	.P1MiddleRight {
+		align-items: center;
+		text-align: center;
+	}
+
+	.grigBalken {
+		grid-template-columns: 1fr 1fr; /* 2 Spalten für Handys */
+	}
+
+	.mapTitels h1,
+	.lastFooterLonger h1 {
+		font-size: 30px;
+	}
 }
